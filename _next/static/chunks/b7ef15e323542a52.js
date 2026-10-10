@@ -1,0 +1,131 @@
+(globalThis.TURBOPACK||(globalThis.TURBOPACK=[])).push(["object"==typeof document?document.currentScript:void 0,15288,e=>{"use strict";var t=e.i(43476),s=e.i(75157);function a({className:e,...a}){return(0,t.jsx)("div",{"data-slot":"card",className:(0,s.cn)("bg-card text-card-foreground flex flex-col gap-6 rounded-xl border py-6 shadow-sm",e),...a})}function r({className:e,...a}){return(0,t.jsx)("div",{"data-slot":"card-header",className:(0,s.cn)("@container/card-header grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5 px-6 has-data-[slot=card-action]:grid-cols-[1fr_auto] [.border-b]:pb-6",e),...a})}function i({className:e,...a}){return(0,t.jsx)("div",{"data-slot":"card-title",className:(0,s.cn)("leading-none font-semibold",e),...a})}function n({className:e,...a}){return(0,t.jsx)("div",{"data-slot":"card-description",className:(0,s.cn)("text-muted-foreground text-sm",e),...a})}function o({className:e,...a}){return(0,t.jsx)("div",{"data-slot":"card-content",className:(0,s.cn)("px-6",e),...a})}e.s(["Card",()=>a,"CardContent",()=>o,"CardDescription",()=>n,"CardHeader",()=>r,"CardTitle",()=>i])},41240,e=>{"use strict";let t=(0,e.i(75254).default)("lightbulb",[["path",{d:"M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5",key:"1gvzjb"}],["path",{d:"M9 18h6",key:"x1upvd"}],["path",{d:"M10 22h4",key:"ceow96"}]]);e.s(["Lightbulb",()=>t],41240)},31278,e=>{"use strict";let t=(0,e.i(75254).default)("loader-circle",[["path",{d:"M21 12a9 9 0 1 1-6.219-8.56",key:"13zald"}]]);e.s(["Loader2",()=>t],31278)},72520,e=>{"use strict";let t=(0,e.i(75254).default)("arrow-right",[["path",{d:"M5 12h14",key:"1ays0h"}],["path",{d:"m12 5 7 7-7 7",key:"xquz4c"}]]);e.s(["ArrowRight",()=>t],72520)},31245,e=>{"use strict";let t=(0,e.i(75254).default)("bot",[["path",{d:"M12 8V4H8",key:"hb8ula"}],["rect",{width:"16",height:"12",x:"4",y:"8",rx:"2",key:"enze0r"}],["path",{d:"M2 14h2",key:"vft8re"}],["path",{d:"M20 14h2",key:"4cs60a"}],["path",{d:"M15 13v2",key:"1xurst"}],["path",{d:"M9 13v2",key:"rq6x2g"}]]);e.s(["Bot",()=>t],31245)},14764,e=>{"use strict";let t=(0,e.i(75254).default)("send",[["path",{d:"M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z",key:"1ffxy3"}],["path",{d:"m21.854 2.147-10.94 10.939",key:"12cjpa"}]]);e.s(["Send",()=>t],14764)},27612,e=>{"use strict";let t=(0,e.i(75254).default)("trash-2",[["path",{d:"M3 6h18",key:"d0wm0j"}],["path",{d:"M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6",key:"4alrt4"}],["path",{d:"M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2",key:"v07s0e"}],["line",{x1:"10",x2:"10",y1:"11",y2:"17",key:"1uufr5"}],["line",{x1:"14",x2:"14",y1:"11",y2:"17",key:"xtxkd"}]]);e.s(["Trash2",()=>t],27612)},84614,e=>{"use strict";let t=(0,e.i(75254).default)("user",[["path",{d:"M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2",key:"975kel"}],["circle",{cx:"12",cy:"7",r:"4",key:"17ys0d"}]]);e.s(["User",()=>t],84614)},21443,e=>{"use strict";var t=e.i(43476),s=e.i(71645),a=e.i(22016),r=e.i(92989),i=e.i(94983),n=e.i(14764),o=e.i(83086),d=e.i(72520),l=e.i(27612),c=e.i(31278),m=e.i(31245),h=e.i(84614),u=e.i(41240),p=e.i(78917),g=e.i(15288),f=e.i(19455),x=e.i(87486),b=e.i(74911),v=e.i(47015);let w=[{keywords:["bus matrix","bus-matrix"],response:`The **Kimball Bus Matrix** is the architectural roadmap of an enterprise dimensional warehouse.
+
+**Structure:**
+- **Rows** = Business processes (e.g. "Retail Sales", "Variant Calling", "Climate Observation")
+- **Columns** = Conformed dimensions (e.g. dim_date, dim_customer, dim_product, dim_workflow_run)
+- **Cells** = A filled dot means that dimension participates in that business process
+
+**Why it matters:**
+1. It's the contract between business stakeholders and the data team
+2. It shows which conformed dimensions must be designed first (high-leverage columns)
+3. It enables drill-across reporting between data marts
+4. In DSModelPro, the bus matrix doubles as the **service decomposition guide** — each row becomes a microservice
+
+**Delivery sequencing:** P1 rows first, but only after their conformed dimensions are ready. A P1 row whose dimensions aren't conformed is blocked.
+
+See the [Bus Matrix page](/bus-matrix) for the full 8\xd712 example matrix.`},{keywords:["star schema","star-schema","dimensional model"],response:`A **star schema** places a single fact table at the centre, surrounded by denormalised dimension tables.
+
+**Key principles:**
+- Use **surrogate keys** for every dimension — never join on natural keys
+- Keep fact tables **narrow and long** (many rows, fewer columns, all measures numeric)
+- **Denormalise dimensions** deliberately — a star, not a snowflake
+- Document the **grain** in the fact table DDL comment
+- Use **SCD Type 2** for attributes where change history matters
+
+**The single grain rule:** A fact table has exactly one grain. If you need a measure at a different grain, it belongs in a different fact table — not bolted on.
+
+See the [Star Schema page](/star-schema) for a full diagram and the fact_sales column specification.`},{keywords:["scd","slowly changing","type 2","type 1"],response:`**Slowly Changing Dimensions (SCD)** handle attribute changes over time. Kimball defines four types:
+
+- **Type 1 (Overwrite):** Replace the old value. No history. Use for corrections.
+- **Type 2 (Track history):** New row with new surrogate key, old row closed with effective_to. Use for attributes where history drives analytics.
+- **Type 3 (Limited history):** Two columns hold current and previous value. Use when only the immediately-prior value matters.
+- **Type 6 (Hybrid):** Combines 1+2+3 — current value, historical rows, and original value. Use when you need both "as was" and "as is" reporting.
+
+**Deeper insight:** Event sourcing ≡ SCD Type 2 at scale. An event-sourced service stores every change as an immutable event; current state is the fold over those events. SCD Type 2 dimensions are the same idea — every change creates a new row. The warehouse becomes a projection of the event log.
+
+See the [Conformed Dimensions page](/conformed-dimensions) for the full SCD comparison.`},{keywords:["microservice","service decomposition","database-per-service"],response:`**Microservices architecture in DSModelPro** is guided by the bus matrix:
+
+**Decomposition rules:**
+1. **One service per bus matrix row** — each business process becomes a service
+2. **One service per conformed dimension** — master dimensions are mastered once
+3. **Database-per-service** — no service writes to another's tables
+4. **Async by default** — events on a broker; sync only when latency demands
+
+**The deeper insight:** The warehouse is not a service — it's a **read-side projection** of the event streams. Treat it as a materialised view in a CQRS sense, and the temptation to put business logic in ETL disappears.
+
+**Patterns in use:** Saga (multi-service transactions), Outbox (atomic state+event), CQRS (separate read/write models), API Gateway/BFF, idempotent consumer, schema registry.
+
+See the [Microservices page](/microservices) for the full architecture diagram and service catalogue.`},{keywords:["provenance","reproducibility","workflow run","lineage"],response:`**Provenance** is the dimensional shape that distinguishes scientific data from commercial data.
+
+**Four provenance dimensions:**
+- **dim_workflow_run** — pipeline name, version, commit hash, submitter, timing, exit status
+- **dim_compute_environment** — scheduler, queue, node count, CPU/GPU type, memory
+- **dim_input_dataset** — DOI, version, checksum, source repository, license
+- **dim_software_artifact** — package name, version, container image digest, dependencies
+
+**Reproducibility as a SQL query:** Given a published result that cites a workflow_run_key, you can recover the full lineage — pipeline, code, container, inputs, compute environment — in a single join. This is what makes the platform reproducible.
+
+In DSModelPro, the Live Demo's Provenance tab queries 28 persisted workflow runs from a Prisma/SQLite database — the provenance loop is real.
+
+See the [Observability & Provenance page](/observability) for the full SQL lineage query.`},{keywords:["data mesh","data product","federated governance"],response:`**Data mesh** treats data products the way microservices treats services: autonomous, owned, contract-bound.
+
+**Four pillars:**
+1. **Domain-oriented ownership** — the team that produces data owns it end-to-end
+2. **Data as a product** — named owner, versioned schema, SLA, quality contract, license
+3. **Self-serve platform** — infrastructure team provides the mechanics
+4. **Federated governance** — global rules set centrally, enforced locally
+
+**The bus matrix IS the data product catalog.** Each row is a discoverable data product; each conformed dimension is a shared product owned by the master-data service.
+
+See the [Data Mesh page](/data-mesh) for the four pillars and data product catalogue.`},{keywords:["neuroimaging","bids","fmri","brain"],response:`**Neuroimaging (BIDS)** is the fourth scientific domain in DSModelPro's hypothetical platform.
+
+**Grain:** one row per (subject \xd7 session \xd7 run \xd7 modality)
+
+**BIDS-standard fields:**
+- bids_modality (bold, dwi, T1w, T2w)
+- bids_task (rest, nback, motor, face, language)
+- bids_acq (acquisition label)
+- scanner type (Siemens Prisma 3T, GE 750, etc.)
+- atlas (MNI152NLin6Asym, etc.)
+
+**MRI-specific measures:** TR, TE, voxel size, num volumes, num slices, motion FD (mean + max), is_pass_qc
+
+**Why neuroimaging?** It has the most mature provenance standards (BIDS, NIDM), clear dimensional shapes, strong workflow tooling (fMRIPrep, FSL, SPM), and a direct connection to clinical/regulated data (GDPR, patient data). It stress-tests the provenance dimension more than any other domain.
+
+See the [Distributed Scientific Computing page](/distributed-scientific) for the full four-domain scenario.`},{keywords:["kafka","event-driven","outbox","cqrs"],response:`**Event-driven pipelines** make the warehouse a projection of event streams, not a separate truth.
+
+**Key patterns:**
+- **Outbox:** Write business change + event in one DB transaction; a poller publishes to Kafka
+- **CQRS:** Commands produce events; events project into multiple read models (warehouse, feature store, search index)
+- **Event sourcing:** The event log IS the source of truth; current state is a fold over events
+- **Idempotent consumer:** Persist event_id before processing; ON CONFLICT DO NOTHING
+
+**Event sourcing ≡ SCD Type 2 at scale.** An event-sourced service is just an SCD2 dimension materialised from its event log.
+
+**Six topics:** observation.raw, observation.normalised, dimension.change (compacted), workflow.completed, policy.changed (compacted), fact.loaded.
+
+See the [Event-Driven Pipelines page](/event-driven) for the full topic catalogue and architecture diagram.`},{keywords:["streaming","real-time","lambda","kappa","materialized"],response:`**Streaming analytics** maintains real-time materialised views of fact tables.
+
+**Three architectures:**
+- **Lambda:** Batch + speed layers, served by a merged view. Two code paths.
+- **Kappa:** One engine — "batch" is a replay of the stream. Single code path.
+- **Hybrid (DSModelPro):** Kappa for hot facts (7-day Flink view), batch for cold history (columnar warehouse). Query federation merges transparently.
+
+**Key insight:** The fact table is a materialised view, not a load target. Freshness is a property of the view, not of a schedule.
+
+**Windowing:** Tumbling windows aligned to the conformed date dimension — every 5-minute window starts at :00, :05, :10 so streaming aggregates roll up cleanly.
+
+See the [Streaming Analytics page](/streaming-analytics) for the full comparison.`},{keywords:["feature store","ml","machine learning","ai"],response:`**AI/ML enablement** turns the dimensional layer into a feature backbone.
+
+**Four enablers:**
+1. **Dimensional layer as feature backbone** — conformed dimensions and facts are the canonical feature source
+2. **Feature store integration** — offline (training) and online (inference) from the same definitions
+3. **Point-in-time correctness** — SCD Type 2 makes point-in-time feature joins possible without leakage
+4. **Self-service on the same model** — analysts and data scientists see the same measures and hierarchies
+
+DSModelPro's feature-store-service (port 3006) has 5 feature groups: customer_clv, product_demand, transient_anomaly, climate_envelope, variant_frequency.
+
+See the [AI/ML Enablement page](/ai-ml) for use cases and the analytics maturity model.`}],y=`I'm AskAI, the DSModelPro assistant. I can help with dimensional modelling, the bus matrix, conformed dimensions, SCD types, microservices architecture, distributed scientific computing, data mesh, streaming analytics, provenance and AI/ML enablement.
+
+**Note:** You're viewing the static GitHub Pages deployment, so I'm running in demo mode with pre-built responses. In the live sandbox, I use the z-ai-web-dev-sdk for full conversational AI.
+
+Try asking about:
+- The Kimball bus matrix
+- Star schema design
+- SCD Type 2 vs event sourcing
+- Microservices decomposition
+- Provenance and reproducibility
+- The neuroimaging (BIDS) domain
+- Kafka and event-driven pipelines
+
+Or explore the [Get Started page](/get-started) for structured learning pathways.`,k=[{name:"Google Gemini",url:"https://gemini.google.com/",description:"Google's multimodal AI — strong at reasoning, code and vision.",freeTier:"Free tier with generous daily limits; Gemini Flash for speed.",best:"Multimodal queries, long context, integration with Google Workspace"},{name:"Qwen AI",url:"https://chat.qwen.ai/",description:"Alibaba's Qwen — strong multilingual and code capabilities.",freeTier:"Free chat interface; Qwen-2.5 open weights available.",best:"Multilingual, Chinese language, open-weight models for local deployment"},{name:"Kimi (Moonshot)",url:"https://kimi.moonshot.cn/",description:"Moonshot AI's Kimi — long-context Chinese-English assistant.",freeTier:"Free with very long context window (200K+ tokens).",best:"Long document analysis, Chinese language, research"},{name:"DeepSeek",url:"https://chat.deepseek.com/",description:"DeepSeek — reasoning-focused open models with free chat.",freeTier:"Free chat; DeepSeek-R1 reasoning model available.",best:"Math, logic, reasoning, code generation"},{name:"ChatGPT (OpenAI)",url:"https://chat.openai.com/",description:"OpenAI's ChatGPT — the original conversational AI.",freeTier:"Free tier with GPT-4o-mini; limited GPT-4o access.",best:"General purpose, plugins, code interpreter, image generation"},{name:"Claude (Anthropic)",url:"https://claude.ai/",description:"Anthropic's Claude — strong at analysis and long documents.",freeTier:"Free tier with daily message limit.",best:"Long-form analysis, coding, safety-focused reasoning"},{name:"Mistral Le Chat",url:"https://chat.mistral.ai/",description:"Mistral AI's Le Chat — European, fast, open-weight options.",freeTier:"Free chat; open-weight models for self-hosting.",best:"European data residency, fast inference, open weights"},{name:"Groq",url:"https://groq.com/",description:"Groq — ultra-fast inference for open models (Llama, Mixtral).",freeTier:"Free API tier with rate limits; very fast.",best:"Speed-critical applications, open model hosting"},{name:"Hugging Face Chat",url:"https://huggingface.co/chat/",description:"Hugging Face's Chat — try open models in the browser.",freeTier:"Free; switch between many open models.",best:"Experimenting with different open models, research"},{name:"Perplexity",url:"https://www.perplexity.ai/",description:"Perplexity — AI-powered search with cited sources.",freeTier:"Free tier with search; Pro for deeper research.",best:"Research with citations, current information, web search"}];v.IS_STATIC_EXPORT;let j=["Explain the Kimball four-step process and how it maps to the bus matrix","What is the difference between SCD Type 2 and event sourcing?","How do I choose between lambda and kappa architecture for a scientific platform?","Design a fact table for neuroimaging (BIDS) data — what would the grain be?","How does the bus matrix become a service decomposition guide in microservices?","What provenance dimensions do I need for reproducible climate science?"],S={role:"assistant",content:v.CHAT_API_REACHABLE?"Hello! I'm **AskAI**, the DSModelPro assistant. I can help you with dimensional modelling, the Kimball bus matrix, conformed dimensions, SCD types, microservices architecture, distributed scientific computing, data mesh, streaming analytics, provenance and AI/ML enablement.\n\nAsk me anything, or try one of the suggested prompts below.":"Hello! I'm **AskAI**, the DSModelPro assistant. You're viewing the **static GitHub Pages deployment**, so I'm running in demo mode with pre-built responses. In the live sandbox I use the z-ai-web-dev-sdk for full conversational AI.\n\nTry asking about the bus matrix, star schemas, SCD types, microservices, provenance, neuroimaging or Kafka. I have prepared answers for each.",timestamp:new Date().toISOString()};function N(){(0,r.useRouter)();let{toast:e}=(0,b.useToast)(),[N,C]=s.useState([S]),[T,I]=s.useState(""),[D,A]=s.useState(!1),M=s.useRef(null);s.useEffect(()=>{M.current&&(M.current.scrollTop=M.current.scrollHeight)},[N,D]);let P=async t=>{if(!t.trim()||D)return;let s=[...N,{role:"user",content:t.trim(),timestamp:new Date().toISOString()}];if(C(s),I(""),A(!0),!v.CHAT_API_REACHABLE){await new Promise(e=>setTimeout(e,600+400*Math.random()));let e={role:"assistant",content:function(e){let t=e.toLowerCase();for(let e of w)if(e.keywords.some(e=>t.includes(e)))return e.response;return y}(t),timestamp:new Date().toISOString()};C(t=>[...t,e]),A(!1);return}try{let e=await fetch("/api/chat",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({messages:s.map(e=>({role:e.role,content:e.content}))})});if(!e.ok){let t=await e.json().catch(()=>({error:"Request failed"}));throw Error(t.error||`HTTP ${e.status}`)}let t=await e.json(),a={role:"assistant",content:t.response,timestamp:new Date().toISOString()};C(e=>[...e,a])}catch(t){e({title:"AskAI error",description:t instanceof Error?t.message:"Failed to get response",variant:"destructive"})}finally{A(!1)}};return(0,t.jsxs)("div",{className:"mx-auto max-w-4xl space-y-6",children:[(0,t.jsxs)("div",{className:"space-y-4",children:[(0,t.jsxs)("div",{className:"flex flex-wrap items-center justify-between gap-3",children:[(0,t.jsx)(f.Button,{variant:"outline",size:"sm",asChild:!0,className:"gap-1.5",children:(0,t.jsxs)(a.default,{href:"/",children:[(0,t.jsx)(d.ArrowRight,{className:"h-4 w-4 rotate-180","aria-hidden":"true"}),"Return to Home"]})}),(0,t.jsx)("div",{className:"flex gap-2",children:(0,t.jsxs)(f.Button,{variant:"ghost",size:"sm",onClick:()=>{C([S]),e({title:"Chat cleared",description:"Started a new conversation."})},className:"gap-1.5",children:[(0,t.jsx)(l.Trash2,{className:"h-3.5 w-3.5","aria-hidden":"true"}),"Clear"]})})]}),(0,t.jsx)("div",{className:"space-y-3",children:(0,t.jsxs)("div",{className:"flex items-center gap-2",children:[(0,t.jsx)("span",{className:"flex h-10 w-10 items-center justify-center rounded-lg bg-gradient-to-br from-emerald-500 to-teal-600 text-white",children:(0,t.jsx)(i.MessageCircle,{className:"h-5 w-5","aria-hidden":"true"})}),(0,t.jsxs)("div",{children:[(0,t.jsx)("h1",{className:"text-3xl font-bold tracking-tight text-foreground sm:text-4xl",children:"AskAI"}),(0,t.jsx)("p",{className:"text-sm text-muted-foreground",children:"Your DSModelPro AI assistant — dimensional modelling, distributed platforms, provenance"})]})]})})]}),(0,t.jsxs)(g.Card,{className:"flex h-[600px] flex-col",children:[(0,t.jsx)(g.CardHeader,{className:"border-b border-border/60 py-3",children:(0,t.jsxs)("div",{className:"flex items-center justify-between",children:[(0,t.jsxs)("div",{className:"flex items-center gap-2",children:[(0,t.jsx)(m.Bot,{className:"h-4 w-4 text-emerald-600 dark:text-emerald-400","aria-hidden":"true"}),(0,t.jsx)("span",{className:"text-sm font-medium",children:"AskAI Chat"}),D?(0,t.jsxs)(x.Badge,{variant:"secondary",className:"gap-1 text-[10px]",children:[(0,t.jsx)(c.Loader2,{className:"h-2.5 w-2.5 animate-spin","aria-hidden":"true"}),"thinking…"]}):(0,t.jsx)(x.Badge,{variant:"outline",className:"text-[10px]",children:"online"})]}),(0,t.jsxs)("span",{className:"text-xs text-muted-foreground",children:[N.length," messages"]})]})}),(0,t.jsxs)("div",{ref:M,className:"flex-1 space-y-4 overflow-y-auto p-4",children:[N.map((e,s)=>(0,t.jsxs)("div",{className:`flex gap-3 ${"user"===e.role?"flex-row-reverse":""}`,children:[(0,t.jsx)("span",{className:`flex h-8 w-8 shrink-0 items-center justify-center rounded-full ${"user"===e.role?"bg-purple-500/15 text-purple-600 dark:text-purple-400":"bg-emerald-500/15 text-emerald-600 dark:text-emerald-400"}`,children:"user"===e.role?(0,t.jsx)(h.User,{className:"h-4 w-4","aria-hidden":"true"}):(0,t.jsx)(m.Bot,{className:"h-4 w-4","aria-hidden":"true"})}),(0,t.jsxs)("div",{className:`max-w-[80%] rounded-lg p-3 ${"user"===e.role?"bg-purple-500/10 text-foreground":"bg-muted text-foreground"}`,children:[(0,t.jsx)("div",{className:"whitespace-pre-wrap text-sm leading-relaxed",children:e.content.split(/(\*\*[^*]+\*\*|`[^`]+`)/g).map((e,s)=>e.startsWith("**")&&e.endsWith("**")?(0,t.jsx)("strong",{className:"font-semibold text-foreground",children:e.slice(2,-2)},s):e.startsWith("`")&&e.endsWith("`")?(0,t.jsx)("code",{className:"rounded border border-border/60 bg-muted/40 px-1 py-0.5 text-xs",children:e.slice(1,-1)},s):e)}),(0,t.jsx)("div",{className:"mt-1 text-[10px] text-muted-foreground",children:new Date(e.timestamp).toLocaleTimeString()})]})]},s)),D?(0,t.jsxs)("div",{className:"flex gap-3",children:[(0,t.jsx)("span",{className:"flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-emerald-500/15 text-emerald-600 dark:text-emerald-400",children:(0,t.jsx)(m.Bot,{className:"h-4 w-4","aria-hidden":"true"})}),(0,t.jsxs)("div",{className:"flex items-center gap-2 rounded-lg bg-muted p-3",children:[(0,t.jsx)(c.Loader2,{className:"h-4 w-4 animate-spin text-muted-foreground","aria-hidden":"true"}),(0,t.jsx)("span",{className:"text-sm text-muted-foreground",children:"AskAI is thinking…"})]})]}):null]}),(0,t.jsx)("div",{className:"border-t border-border/60 p-3",children:(0,t.jsxs)("form",{onSubmit:e=>{e.preventDefault(),P(T)},className:"flex gap-2",children:[(0,t.jsx)("input",{type:"text",value:T,onChange:e=>I(e.target.value),placeholder:"Ask about star schemas, bus matrices, SCD types, microservices, provenance…",className:"flex-1 rounded-md border border-border bg-background px-3 py-2 text-sm placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring",disabled:D}),(0,t.jsxs)(f.Button,{type:"submit",size:"icon",disabled:D||!T.trim(),className:"h-10 w-10",children:[(0,t.jsx)(n.Send,{className:"h-4 w-4","aria-hidden":"true"}),(0,t.jsx)("span",{className:"sr-only",children:"Send message"})]})]})})]}),N.length<=1?(0,t.jsxs)(g.Card,{className:"border-emerald-500/30 bg-emerald-500/5",children:[(0,t.jsx)(g.CardHeader,{children:(0,t.jsxs)(g.CardTitle,{className:"flex items-center gap-2 text-sm",children:[(0,t.jsx)(u.Lightbulb,{className:"h-4 w-4 text-emerald-600 dark:text-emerald-400","aria-hidden":"true"}),"Try asking"]})}),(0,t.jsx)(g.CardContent,{className:"grid grid-cols-1 gap-2 sm:grid-cols-2",children:j.map(e=>(0,t.jsx)("button",{onClick:()=>P(e),className:"rounded-md border border-border/60 p-3 text-left text-xs text-muted-foreground transition-colors hover:bg-accent hover:text-foreground",children:e},e))})]}):null,(0,t.jsxs)(g.Card,{className:"border-purple-500/30 bg-purple-500/5",children:[(0,t.jsxs)(g.CardHeader,{children:[(0,t.jsxs)(g.CardTitle,{className:"flex items-center gap-2 text-base",children:[(0,t.jsx)(p.ExternalLink,{className:"h-4.5 w-4.5 text-purple-600 dark:text-purple-400","aria-hidden":"true"}),"External AI sources — for queries outside DSModelPro"]}),(0,t.jsx)(g.CardDescription,{className:"text-xs",children:"AskAI is confined to DSModelPro. For general-purpose questions, use these free/limited tiers. Each opens in a new tab."})]}),(0,t.jsx)(g.CardContent,{children:(0,t.jsx)("div",{className:"grid grid-cols-1 gap-2 sm:grid-cols-2 lg:grid-cols-3",children:k.map(e=>(0,t.jsxs)("a",{href:e.url,target:"_blank",rel:"noopener noreferrer",className:"group rounded-md border border-border/60 p-3 transition-all hover:border-purple-500/40 hover:shadow-sm",children:[(0,t.jsxs)("div",{className:"flex items-center justify-between",children:[(0,t.jsx)("span",{className:"text-sm font-medium text-foreground",children:e.name}),(0,t.jsx)(p.ExternalLink,{className:"h-3 w-3 text-muted-foreground transition-colors group-hover:text-purple-600","aria-hidden":"true"})]}),(0,t.jsx)("p",{className:"mt-1 text-[10px] leading-relaxed text-muted-foreground",children:e.description}),(0,t.jsx)("div",{className:"mt-1.5 flex flex-wrap gap-1",children:(0,t.jsx)(x.Badge,{variant:"secondary",className:"text-[9px]",children:e.freeTier})}),(0,t.jsxs)("p",{className:"mt-1 text-[9px] text-purple-600 dark:text-purple-400",children:["Best: ",e.best]})]},e.name))})})]}),(0,t.jsx)(g.Card,{className:"border-emerald-500/30 bg-gradient-to-br from-emerald-500/10 to-purple-500/10",children:(0,t.jsxs)(g.CardContent,{className:"flex flex-col items-start justify-between gap-3 p-5 sm:flex-row sm:items-center",children:[(0,t.jsxs)("div",{children:[(0,t.jsx)("div",{className:"text-sm font-semibold text-foreground",children:"Want to see it in action?"}),(0,t.jsx)("p",{className:"mt-1 text-xs text-muted-foreground",children:"Open the Live Demo to see synthetic data and event streams from running mini-services."})]}),(0,t.jsx)(f.Button,{asChild:!0,className:"gap-1.5",children:(0,t.jsxs)(a.default,{href:"/live-demo",children:[(0,t.jsx)(o.Sparkles,{className:"h-4 w-4","aria-hidden":"true"}),"Open Live Demo"]})})]})})]})}e.s(["default",()=>N],21443)}]);
